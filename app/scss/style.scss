@@ -1,1 +1,225 @@
+//font-family: 'Montserrat', sans-serif;
 
+.header {
+    &__inner {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        color: rgba(54, 56, 56, 0.90);
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__btn:hover {
+        animation: myAnim 1s ease 0s 1 normal forwards;
+        cursor: pointer;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        gap: 80px;
+    }
+
+    &__link:hover {
+        scale: 1.2;
+        transition: .3s;
+    }
+}
+
+
+//FOOTER
+.footer {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    &__inner {
+        background: #DFDFDF;
+    }
+
+    &__contact {
+        width: 545px;
+    }
+
+    &__contact-title {
+        color: #363838;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: 14px;
+    }
+
+    &__contact-text {
+        color: #5A5A5A;
+        margin-bottom: 16px;
+    }
+
+    &__contact-email {
+        color: #363838;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 22px;
+        padding-left: 33px;
+        position: relative;
+    }
+
+    &__contact-email::before {
+        content: "";
+        position: absolute;
+        background: url("../img/envelope.svg") no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 16px;
+        height: 12px;
+    }
+
+    &__contact-email:hover {
+        color: black;
+        transition: .3s;
+    }
+
+    &__form {
+    }
+
+    &__form-input {
+        width: 368px;
+        height: 40px;
+        background-color: #DFDFDF;
+        outline: none;
+        border-radius: 21px;
+        border: 1px solid #383636;
+        opacity: 0.7;
+        padding-inline: 18px;
+    }
+
+    &__form-btn {
+        border-radius: 21px;
+        background: #363838;
+        width: 160px;
+        height: 40px;
+        margin-left: 10px;
+        color: #FFFFF0;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__form-btn:hover {
+        background-color: black;
+        transition: .3s;
+    }
+
+    &__social {
+
+    }
+
+    &__social-link {
+        font-size: 14px;
+        color: #707070;
+        font-weight: 600;
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    &__social-link::before {
+        content: "";
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        position: absolute;
+    }
+
+    &__social-link:nth-child(1)::before {
+        background: url("../img/facebook.svg") no-repeat;
+    }
+
+    &__social-link:nth-child(2)::before {
+        background: url("../img/instagram.svg") no-repeat;
+    }
+
+    &__social-link:nth-child(3)::before {
+        background: url("../img/Pinterest.svg") no-repeat;
+    }
+
+    &__social-link:nth-child(4)::before {
+        background: url("../img/whatsapp.svg") no-repeat;
+    }
+
+    &__social-link:nth-child(5)::before {
+        background: url("../img/youtube.svg") no-repeat;
+        height: 12px;
+    }
+
+    &__social-link:hover {
+        scale: 1.2;
+        transition: .3s;
+    }
+
+    &__menu {
+    }
+
+    &__list {
+    }
+
+    &__list-link {
+        color: #707070;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    &__list-link:hover {
+        scale: 1.2;
+        transition: .3s;
+    }
+
+    &__copyright {
+        background: #363838;
+        color: #A1A1A1;
+        text-align: center;
+        padding-bottom: 40px;
+        padding-top: 41px;
+    }
+}
+
+
+//KEYFRAMES
+@keyframes myAnim {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

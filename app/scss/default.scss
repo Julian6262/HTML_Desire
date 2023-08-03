@@ -9,14 +9,30 @@ html {
 }
 
 html, body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    height: 100%;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+//main{
+//    flex: 1 0 auto;
+//}
+//
+//footer{
+//    flex: 0 0 auto;
+//}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 27px;
     color: black;
 }
 
@@ -36,7 +52,7 @@ li {
 }
 
 .container {
-    max-width: 1326px; //увеличить на 30px
+    max-width: 1141px; //увеличить на 30px
     margin: 0 auto;
     padding: 0 15px;
 }
