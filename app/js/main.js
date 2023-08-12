@@ -25,3 +25,34 @@ let swiper = new Swiper(".top__slider", {
         clickable: true,
     },
 });
+
+
+// MIXING///////////////////////////////////////////////////
+let gallery = document.querySelector('.gallery__images');
+
+if (gallery) {
+    let mixer = mixitup('.gallery__inner', {
+        selectors: {
+            target: '.gallery__images'
+        },
+        animation: {
+            duration: 500,
+        },
+        load: {
+            filter: '.bedroom'
+        }
+    });
+}
+
+
+// ACTIVE-LINK//////////////////////////////////////////////
+let link = document.querySelectorAll('.menu__link');
+
+link.forEach((el) => {
+    if (el.getAttribute('href') == window.location.pathname) {
+        el.classList.add('menu__link--active');
+    }
+});
+
+
+

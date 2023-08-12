@@ -32,6 +32,9 @@
     "sass": "^1.63.6"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^5.0.22",
+    "mixitup": "^3.3.1",
     "swiper": "^10.1.0"
   }
 }

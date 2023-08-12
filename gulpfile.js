@@ -18,6 +18,7 @@ function styles() {
     return src([
         'node_modules/normalize.css/normalize.css',
         // 'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
         'node_modules/swiper/swiper-bundle.css',
         'app/scss/fonts.scss',
         'app/scss/default.scss',
@@ -36,8 +37,10 @@ function styles() {
 
 function scripts() {
     return src([
-        // 'node_modules/jquery/dist/jquery.js',
+        'node_modules/jquery/dist/jquery.js',
         // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/mixitup/dist/mixitup.js',
         'node_modules/swiper/swiper-bundle.js',
         'app/js/main.js'
     ])
