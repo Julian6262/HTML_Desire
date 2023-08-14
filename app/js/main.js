@@ -26,6 +26,15 @@ let swiper = new Swiper(".top__slider", {
     },
 });
 
+let swiper1 = new Swiper(".gallery-mini__slider", {
+    spaceBetween: 30,
+    slidesPerView: 10,
+    pagination: {
+        el: ".gallery-mini__pagination",
+        clickable: true,
+    },
+});
+
 
 // MIXING///////////////////////////////////////////////////
 let gallery = document.querySelector('.gallery__images');

@@ -640,7 +640,7 @@
     }
 
     &__image {
-        &:nth-child(1) {
+        &:first-child {
             grid-column: span 2;
             grid-row: span 2;
         }
@@ -895,6 +895,190 @@
 .collection-about {
     margin: 0 auto 72px;
     width: 1870px;
+}
+
+
+//GALLEY-PAGE
+.gallery-page {
+    margin-top: 83px;
+    margin-bottom: 148px;
+}
+
+.gallery-page .gallery__image:last-child {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}
+
+
+.map {
+    margin-bottom: 55px;
+}
+
+
+//CONTACTS
+.contacts {
+    margin-bottom: 101px;
+    color: #5A5A5A;
+
+    &__title {
+        color: #363838;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 23px;
+    }
+
+    &__line {
+        width: 200px;
+        height: 2px;
+        background: #6D7278;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 23px;
+    }
+
+    &__inner {
+        margin-left: 280px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 36px;
+        margin-bottom: 19px;
+    }
+
+    &__social-item {
+    }
+
+    &__social-link {
+    }
+
+    &__social-img:hover {
+        scale: 1.4;
+        transition: .3s;
+    }
+
+    &__text {
+        color: #A1A1A1;
+        margin-bottom: 10px;
+    }
+
+    &__tel:hover {
+        scale: 1.1;
+        transition: .3s;
+    }
+
+    &__address {
+        margin-bottom: 20px;
+    }
+
+    &__email:hover {
+        scale: 1.1;
+        transition: .3s;
+    }
+
+    &__form {
+
+    }
+
+    &__form-inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13px;
+    }
+
+    &__form-input {
+        width: 407px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #DFDFDF;
+        padding: 17px;
+        outline: none;
+    }
+
+    &__form-input::placeholder {
+        color: #A1A1A1;
+    }
+
+    &__form-textarea {
+        border-radius: 20px;
+        border: 1px solid #DFDFDF;
+        padding: 17px;
+        outline: none;
+        display: block;
+        width: 100%;
+        height: 125px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+
+    &__form-textarea::placeholder {
+        color: #A1A1A1;
+    }
+
+    &__form-btn {
+        width: 181px;
+        height: 40px;
+    }
+}
+
+
+//GALLERY-MINI
+.gallery-mini {
+    width: 1867px;
+    margin: 0 auto 145px;
+
+    &__slider {
+        overflow-y: visible;
+    }
+
+    &__items {
+
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+
+    &__img {
+        width: 170px;
+        height: 170px;
+    }
+
+    &__content {
+
+
+    }
+
+    &__title {
+        width: 140px;
+        text-align: center;
+    }
+
+    &__line {
+    }
+
+    &__text {
+    }
+
+    &__pagination {
+        bottom: -40px !important;
+    }
+}
+
+.collection {
+    &__image-title {
+    }
+
+    &__image-line {
+    }
+
+    &__image-text {
+    }
 }
 
 
