@@ -35,7 +35,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__link" href="#">Блог</a>
+                            <a class="menu__link" href="/blog.html">Блог</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__link" href="/contacts.html">Контакты</a>
@@ -100,7 +100,11 @@
 
             <div class="gallery__images mix bedroom">
                 <a class="gallery__image" href="#" target="_blank">
-                    <img class="gallery__img" src="img/gallery1.jpg" alt="...">
+                    <picture>
+                        <source srcset="img/gallery1.avif" type="image/avif">
+                        <source srcset="img/gallery1.webp" type="image/webp">
+                        <img class="gallery__img" src="img/gallery1.jpg" alt="...">
+                    </picture>
                 </a>
                 <a class="gallery__image" href="#" target="_blank">
                     <img class="gallery__img" src="img/gallery2.jpg" alt="...">
@@ -293,7 +297,7 @@
                         <input class="footer__form-input" type="text" placeholder="Подпишитесь по электронной почте">
                     </label>
 
-                    <input class="footer__form-btn" type="submit" placeholder="Отправить">
+                    <input class="footer__form-btn" type="submit">
                 </form>
 
             </div>
